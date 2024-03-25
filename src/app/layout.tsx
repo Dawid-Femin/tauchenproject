@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Nav } from "@/stories/Components/Nav/Nav";
+import { Slider } from "@/stories/Components/Slider/Slider";
+import { Footer } from "@/stories/Components/Footer/Footer";
+import { useReloadFont } from "@/app/hooks/useReloadFont";
+import { images } from "./utils/getSliderImages";
 
 const inter = Inter({ subsets: ["latin"] });
+const reloadFont = useReloadFont.style.fontFamily;
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,9 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <h1>Header</h1>
-      {children}
-      <h1>Footer</h1>
+        <Nav font={reloadFont} />
+        <Slider font={reloadFont} images={images} />
+        {children}
+        <Footer font={reloadFont} />
       </body>
     </html>
   );
