@@ -3,7 +3,7 @@ import { fn } from '@storybook/test';
 import { Header as H } from './Header';
 
 const meta = {
-    title: 'Example/Header',
+    title: 'Components/Header',
     component: H,
     parameters: {
     },

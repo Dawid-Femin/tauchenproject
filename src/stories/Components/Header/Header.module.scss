@@ -1,0 +1,48 @@
+.header {
+  width: 100%;
+  height: 650px;
+  position: relative;
+
+  @media (max-width: 768px) {
+    height: 950px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btnLeft,
+.btnRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 42px;
+  color: #FFF;
+  transition: .2s ease-in-out;
+
+  &:hover {
+    font-size: 44px;
+  }
+}
+
+.btnLeft {
+  left: 20px;
+}
+
+.btnRight {
+  right: 20px;
+}
