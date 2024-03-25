@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h2 {
+    font-size: 80px;
+    color: #FFFFFF;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  p {
+    color: #FFFFFF;
+    font-size: 38px;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.btn {
+  margin-top: 20px;
+}
